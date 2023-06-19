@@ -10,7 +10,7 @@ let package = Package(
       targets: ["LLVM"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/llvm-swift/FileCheck.git", from: "0.0.3"),
+    .package(url: "https://github.com/llvm-swift/FileCheck.git", .exact("0.0.3")),
   ],
   targets: [
     .systemLibrary(
